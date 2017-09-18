@@ -7,6 +7,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Multi Line Vc-->
         <scene sceneID="R8D-2W-Geh">
@@ -21,13 +26,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JUL-Vd-Q2U">
-                                <rect key="frame" x="30" y="60" width="315" height="200"/>
+                                <rect key="frame" x="30" y="60" width="315" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.3835221063" blue="0.50272991659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="lZV-5J-gJq"/>
+                                    <constraint firstAttribute="height" constant="40" id="lZV-5J-gJq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -40,6 +45,7 @@
                     </view>
                     <connections>
                         <outlet property="multilineTextView" destination="JUL-Vd-Q2U" id="y6A-Hn-zgb"/>
+                        <outlet property="textheightConstraint" destination="lZV-5J-gJq" id="Pxb-dj-KOa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1M-dc-yUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
